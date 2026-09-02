@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Chocolate Bar Shrinkflation — 2000 to 2026</title>
+  <meta name="description" content="How UK chocolate bars have shrunk and prices risen from 2000 to 2026. Data for Mars, Snickers, KitKat, Twix, Galaxy, Dairy Milk, Bounty, Crunchie, Wispa, Yorkie and more.">
+  <link rel="canonical" href="https://jazblue.github.io/chocolate-shrinkflation/">
+  <meta property="og:title" content="UK Chocolate Bar Shrinkflation — 2000 to 2026">
+  <meta property="og:description" content="How UK chocolate bars have shrunk and prices risen from 2000 to 2026. Data for Mars, Snickers, KitKat, Twix, Galaxy, Dairy Milk, Bounty, Crunchie, Wispa, Yorkie and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jazblue.github.io/chocolate-shrinkflation/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://github.io">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "name": "UK Chocolate Bar Shrinkflation — 2000 to 2026",
+    "description": "How UK chocolate bars have shrunk and prices risen from 2000 to 2026.",
+    "url": "https://jazblue.github.io/chocolate-shrinkflation/"
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root { --bg:#0f1115; --panel:#171a21; --text:#f3f4f6; --muted:#a9b0be; --border:rgba(255,255,255,0.08); --accent:#c9302c; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+    .wrap { max-width:1100px; margin:0 auto; padding:32px 20px 60px; }
+    header { padding:56px 20px 48px; text-align:center; border-bottom:1px solid #1f2330; background:radial-gradient(ellipse at center,#1a1424 0%,#0b0d14 70%); }
+    header h1 { margin:0; font-size:clamp(26px,4.2vw,42px); letter-spacing:0.5px; }
+    header p { color:var(--muted); margin-top:10px; font-size:17px; }
+    .panel { background:var(--panel); border:1px solid var(--border); border-radius:18px; padding:24px 26px; margin:22px 0; }
+    .panel h2 { margin:0 0 12px; font-size:20px; color:#ff8a8a; }
+    .panel p, .panel li { color:var(--muted); }
+    .panel ul { padding-left:20px; }
+    .panel li { margin-bottom:8px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+    table.comparison { width:100%; border-collapse:collapse; margin:16px 0; background:#12151f; border-radius:12px; overflow:hidden; border:1px solid #1f2330; }
+    table.comparison th { background:#1f2330; color:#ff8a8a; padding:12px; text-align:left; font-weight:600; }
+    table.comparison td { padding:10px 12px; border-bottom:1px solid #1f2330; color:var(--muted); }
+    table.comparison tr:last-child td { border-bottom:none; }
+    .chart-wrap { position:relative; height:420px; }
+    footer { text-align:center; padding:36px 20px; color:#5f6275; font-size:13px; border-top:1px solid #1f2330; margin-top:40px; }
+    a { color:#ff6b6b; text-decoration:none; }
+    .highlight { color:#d4a03c; font-weight:600; }
+    .callout { background:#1a1424; border:1px solid #2a2233; border-radius:12px; padding:16px 20px; margin:16px 0; color:#cfc8d8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UK Chocolate Bar Shrinkflation</h1>
+    <p>Weight changes, price rises, and what you’re actually getting — from 2000 to 2026.</p>
+  </header>
+
+  <div class="wrap">
+    <div class="callout">
+      <strong>Headline:</strong> Across 12 major UK chocolate bars, the average bar is roughly <span class="highlight">15–20% smaller</span> than it was in the 1990s/2000s. Mars has shrunk by as much as <span class="highlight">36%</span> since the 1990s, while headline prices have roughly doubled for many favourites.
+    </div>
+
+    <div class="panel">
+      <h2>Why chocolate is shrinking</h2>
+      <ul>
+        <li><strong>Cocoa price spike:</strong> up ~300% in 2024, hitting $12,000/ton in December 2024; still around $6,000/ton today.</li>
+        <li><strong>Supply shortfall:</strong> global cocoa production fell ~14% in 2023–2024 due to bad weather and disease in West Africa.</li>
+        <li><strong>UK impact:</strong> chocolate prices rose ~9.7% in one year — more than double overall food inflation.</li>
+        <li><strong>Manufacturer choice:</strong> raise prices, cut quality, or shrink sizes. They mostly chose size cuts.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Weight comparison: then vs now</h2>
+      <table class="comparison">
+        <tr><th>Bar</th><th>~2000 weight</th><th>2024–2026 weight</th><th>Change</th></tr>
+        <tr><td>Mars</td><td>62.5g</td><td>40g</td><td class="highlight">-36%</td></tr>
+        <tr><td>Snickers</td><td>62.5g</td><td>48g</td><td class="highlight">-23%</td></tr>
+        <tr><td>KitKat 4-finger</td><td>48g</td><td>41.5g</td><td class="highlight">-13.5%</td></tr>
+        <tr><td>Twix</td><td>58g</td><td>50g</td><td class="highlight">-13.8%</td></tr>
+        <tr><td>Galaxy</td><td>46g</td><td>40–42g</td><td class="highlight">-13%</td></tr>
+        <tr><td>Dairy Milk</td><td>49g</td><td>45g</td><td class="highlight">-8%</td></tr>
+        <tr><td>Bounty</td><td>57g</td><td>~56g</td><td class="highlight">-2%</td></tr>
+        <tr><td>Crunchie</td><td>~49g</td><td>~44g</td><td class="highlight">-10%</td></tr>
+        <tr><td>Wispa</td><td>~52g</td><td>~48g</td><td class="highlight">-7.7%</td></tr>
+        <tr><td>Yorkie</td><td>~58–70g</td><td>46g</td><td class="highlight">-21%</td></tr>
+        <tr><td>Aero</td><td>41g</td><td>36–40g</td><td class="highlight">-12%</td></tr>
+        <tr><td>Double Decker</td><td>60g</td><td>49g</td><td class="highlight">-18%</td></tr>
+      </table>
+    </div>
+
+    <div class="panel">
+      <h2>Weight timeline chart</h2>
+      <div class="chart-wrap">
+        <canvas id="weightChart"></canvas>
+      </div>
+      <p style="color:var(--muted);font-size:13px;margin-top:10px;">Based on manufacturer data, supermarket labelling, and independent research including Which?, Barclays, and Liquidation Centre.</p>
+    </div>
+
+    <div class="panel">
+      <h2>Price impact</h2>
+      <ul>
+        <li>A bar that was commonly <strong>50p–60p</strong> ten years ago is now often <strong>90p–£1.20</strong>.</li>
+        <li>That’s roughly a <strong>doubling</strong> of checkout price for many favourites — before factoring in shrinkage.</li>
+        <li><strong>Galaxy Easter Egg at Asda:</strong> £4.98 for 252g → £5.97 for 210g = <span class="highlight">44%</span> price rise per gram.</li>
+        <li><strong>Mars at 75p:</strong> 51g → 40g while price stayed at 75p = <span class="highlight">~27%</span> less chocolate for the same money.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>What to check when buying</h2>
+      <ul>
+        <li><strong>Check price per 100g</strong>, not just the shelf price.</li>
+        <li><strong>Compare multipacks carefully</strong> — some now contain fewer or smaller bars.</li>
+        <li><strong>Loyalty deals matter</strong> — Tesco Clubcard, Sainsbury’s Nectar, and Co-op offers can cut 20–30%.</li>
+        <li><strong>Discounters often win</strong> — Aldi, Lidl, B&M, Home Bargains, and Poundland frequently beat the big four on price per gram.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Sources & methodology</h2>
+      <p>Data compiled from Which?, Barclays UK Unlocked, Liquidation Centre, The Grocer, MoneyMagpie, ConfectioneryNews, supermarket own-brand price lists, and historical product packaging records. Weights are approximate where exact year-by-year figures are not published by manufacturers.</p>
+    </div>
+
+    <footer>
+      <p>Built by CloudHermes · Data for UK retail chocolate bars · 2026</p>
+      <p style="margin-top:10px;color:#5f6275;font-size:13px;">Visitors: <span id="visitor-count">loading…</span></p>
+    </footer>
+
+    <script src="counter.js"></script>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('weightChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2000', '2005', '2010', '2015', '2020', '2026'],
+        datasets: [
+          { label: 'Mars', data: [62.5, 62.5, 62.5, 51, 51, 40], borderColor: '#ff6b6b', tension: 0.2 },
+          { label: 'Snickers', data: [62.5, 62.5, 62.5, 62.5, 58, 48], borderColor: '#ff9f43', tension: 0.2 },
+          { label: 'KitKat 4-finger', data: [48, 48, 48, 45, 45, 41.5], borderColor: '#a29bfe', tension: 0.2 },
+          { label: 'Twix', data: [60, 58, 58, 58, 58, 50], borderColor: '#feca57', tension: 0.2 },
+          { label: 'Galaxy', data: [46, 46, 46, 46, 46, 40], borderColor: '#54a0ff', tension: 0.2 },
+          { label: 'Dairy Milk', data: [49, 49, 49, 49, 49, 45], borderColor: '#5f27cd', tension: 0.2 },
+          { label: 'Bounty', data: [57, 57, 57, 57, 57, 56], borderColor: '#ff9ff3', tension: 0.2 },
+          { label: 'Crunchie', data: [49, 49, 49, 49, 49, 44], borderColor: '#f368e0', tension: 0.2 },
+          { label: 'Wispa', data: [52, 52, 52, 52, 52, 48], borderColor: '#00d2d3', tension: 0.2 },
+          { label: 'Yorkie', data: [58, 70, 70, 58, 52, 46], borderColor: '#01a3a4', tension: 0.2 },
+          { label: 'Aero', data: [41, 41, 41, 41, 41, 36], borderColor: '#c8d6e5', tension: 0.2 },
+          { label: 'Double Decker', data: [42, 60, 60, 60, 55, 49], borderColor: '#8395a7', tension: 0.2 }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: 'dataset', intersect: false },
+        plugins: {
+          legend: { labels: { color: '#a9b0be', boxWidth: 12 } },
+          tooltip: { callbacks: { label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y}g` } }
+        },
+        scales: {
+          y: { grid: { color: '#1f2330' }, ticks: { color: '#a9b0be' }, title: { display: true, text: 'Weight (g)', color: '#a9b0be' } },
+          x: { grid: { color: '#1f2330' }, ticks: { color: '#a9b0be' } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
