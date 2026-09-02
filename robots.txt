@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Sitemap: https://jazblue.github.io/chocolate-shrinkflation/sitemap.xml
